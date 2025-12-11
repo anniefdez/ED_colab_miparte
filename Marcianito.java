@@ -62,6 +62,7 @@ public class Marcianito {
 		if (this.nivelVida > 1) {
 			otro.nivelVida++;
 			this.nivelVida--;
+			System.out.println("Se han transferido 1 de vida entre los marcianos.");
 		}
 	}
 	
@@ -77,7 +78,7 @@ public class Marcianito {
 
 	@Override
 	public String toString() {
-		return "Marcianito [x=" + x + ", y=" + y + ", nivelVida=" + nivelVida + "]";
+		return String.format("Marcianito en la posición %d , %d con nivel de vida %d.", x, y, nivelVida);
 	}
 
 	
